@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Singularidad - Contacto</title>
+    <link rel="shortcut icon" href="Iconos/iconoPestania.png" type="image/x-icon">
+    <link rel="stylesheet" href="estilos.css">
+
+    <script src="funcion.js"></script>
+
+    <!------FONT GOOGLE----------------------------------->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Audiowide&family=Orbitron:wght@400;500;700;800;900&display=swap" rel="stylesheet">
+
+
+</head>
+<body>
+
+        <!------------------------DIV ARRIBA -------------------------------------------->
+
+        <div id="contenedorArriba">
+
+            <div id="arriba">
+                        
+                <div id="menu">
+
+             
+
+                    <ul id="ulMenu">
+
+                            <li class="liMenu">
+                                <a id="menu-a" href="contacto.html" >CONTACTO</a>
+                            </li>
+                            <li class="liMenu">
+                                <a id="menu-a" href="peliculas.html"  >MOVIES</a>
+                            </li>
+                            <li class="liMenu">
+                                <a id="menu-a" href="index.html" >HOME</a>
+                            </li>
+                    </ul>
+
+                </div>
+
+            </div>
+
+        </div>   
+
+         <!------------------------------------------------------------------------------>
+        <div id="contenedorCentrales" onsubmit=" return validarCampos()">
+
+                <div id="divCentroIzq" class="dos" >
+
+                        <label class="labelContacto">Avisos de validacion</label>
+                        <div id="divErrores">
+
+                        </div>
+
+                        <label class="labelContacto" >Envios correctos</label>
+                        <div id="divEnvios">
+                            <ul id="listaEnvios">
+
+                            </ul>
+                        </div>
+
+                </div >
+                <!----------------------------------->
+
+                <div id="divCentroDer" class="dos"  >
+ 
+                        <div id="contenedorForm">
+
+                            <form id="formulario" onsubmit = " return validar() ">
+
+                                    <label >Nombre:</label>
+                                    <input type="text" id="nombre">
+
+
+                                    <label >Apellido:</label>
+                                    <input type="text" id="apellido">
+
+
+                                    <label >Telefono:</label>
+                                    <input type="text" id="telefono">
+
+
+                                    <label >E-mail:</label>
+                                    <input type="text" id="email">
+
+                                    <label >Motivo:</label>
+                                    <select id="desplegable" name="desplegable">
+
+                                        <option value="recomendarPelicula">Recomendar Pelicula</option>
+                                        <option value="opinarSobreSitio">Opinion sobre el Sitio</option>
+                                        <option value="otro">Otro</option>
+                                    
+                                    </select>
+
+                                    <label >Mensaje</label>
+                                    <textarea id="mensaje" placeholder="Escriba el mensaje aca..."></textarea>
+
+                                    <input id="boton" type="submit" value="Enviar">
+                                    
+                                    
+
+
+                            </form>
+
+           
+
+                        </div>
+                            
+                </div>
+                
+        </div>        
+
+    
+</body>
+</html>
